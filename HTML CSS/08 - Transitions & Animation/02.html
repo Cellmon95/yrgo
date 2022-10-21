@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+        .square{
+            height: 40px;
+            width: 40px;
+            margin: 5px;
+            background-color: red;
+            transition-duration: 1s;
+        }
+        body:hover div{
+            transform: translateX(250px);
+        }
+
+        #square1{
+            transition-timing-function: ease;
+        }
+        #square2{
+            transition-timing-function: ease-in;         
+        }
+        #square3{
+            transition-timing-function: ease-out;            
+        }
+        #square4{
+            transition-timing-function: step-start;                        
+        }
+        #square5{
+            transition-timing-function:  linear;            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="square" id="square1"></div>
+    <div class="square" id="square2"></div>
+    <div class="square" id="square3"></div>
+    <div class="square" id="square4"></div>
+    <div class="square" id="square5"></div>
+</body>
+</html>
